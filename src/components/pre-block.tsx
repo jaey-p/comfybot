@@ -111,7 +111,11 @@ export async function Highlight(
     jsx,
     jsxs,
     components: {
-      pre: (props) => <PurePre {...props} code={code} lang={lang} />,
+      pre: ({ children, ...props }) => (
+        <PurePre {...props} code={code} lang={lang}>
+          {children}
+        </PurePre>
+      ),
     },
   }) as JSX.Element;
 }

@@ -37,7 +37,7 @@ export function CodeBlock({
           jsx,
           jsxs,
           components: {
-            pre: (props) => (
+            pre: ({ children, ref, ...props }) => (
               <pre
                 {...props}
                 lang={lang}
@@ -52,7 +52,7 @@ export function CodeBlock({
                       ))}
                     </div>
                   )}
-                  {props.children}
+                  {children}
                 </div>
               </pre>
             ),
