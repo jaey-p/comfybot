@@ -1,14 +1,19 @@
 import type { MetadataRoute } from "next";
 
+const APP_NAME = "Better Chatbot";
+const APP_SHORT_NAME = "Better Chatbot";
+const APP_DESCRIPTION =
+  "Just a Better Chatbot. Powered by Agent & MCP & Workflows.";
+
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "better-chatbot",
-    short_name: "Better ChatBot",
-    description: "Just a Better Chatbot. Powered by Agent & MCP & Workflows.",
+    name: APP_NAME,
+    short_name: APP_SHORT_NAME,
+    description: APP_DESCRIPTION,
     start_url: "/",
     display: "standalone",
-    background_color: "transparent",
-    theme_color: "transparent",
+    background_color: "oklch(0.141 0.005 285.823)",
+    theme_color: "oklch(0.141 0.005 285.823)",
     icons: [
       {
         src: "/apple-touch-icon.png",
