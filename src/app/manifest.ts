@@ -12,8 +12,7 @@ export default function manifest(): MetadataRoute.Manifest {
     description: APP_DESCRIPTION,
     start_url: "/",
     display: "standalone",
-    background_color: "oklch(0.141 0.005 285.823)",
-    theme_color: "oklch(0.141 0.005 285.823)",
+
     icons: [
       {
         src: "/apple-touch-icon.png",
@@ -21,11 +20,7 @@ export default function manifest(): MetadataRoute.Manifest {
         type: "image/png",
         purpose: "any",
       },
-      {
-        src: "/favicon.svg",
-        sizes: "any",
-        type: "image/svg+xml",
-      },
+
       {
         purpose: "any",
         sizes: "192x192",
