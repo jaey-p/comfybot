@@ -76,7 +76,16 @@ export default async function RootLayout({
           content="#16181c"
           media="(prefers-color-scheme: dark)"
         />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link
+          rel="apple-touch-icon"
+          href="/apple-touch-icon.png"
+          sizes="180x180"
+        />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta
+          name="apple-mobile-web-app-status-bar-style"
+          content="black-translucent"
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `
