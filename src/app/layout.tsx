@@ -26,9 +26,6 @@ export const metadata: Metadata = {
   title: APP_NAME,
   description: APP_DESCRIPTION,
   applicationName: APP_NAME,
-  icons: {
-    apple: "/apple-touch-icon.png",
-  },
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
@@ -79,6 +76,7 @@ export default async function RootLayout({
           content="#16181c"
           media="(prefers-color-scheme: dark)"
         />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <script
           dangerouslySetInnerHTML={{
             __html: `

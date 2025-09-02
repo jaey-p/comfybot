@@ -1,7 +1,7 @@
 const CACHE_NAME = "better-chatbot-cache";
 const CACHE_URLS = [
   "/",
-  "/manifest.webmanifest",
+  "/manifest.json",
   "/apple-touch-icon.png",
   "/icons/icon-512x512.png",
   "/icons/icon-maskable-512x512.png",
